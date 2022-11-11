@@ -44,6 +44,7 @@
             this.btnmult = new System.Windows.Forms.Button();
             this.btndiv = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btndlt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn0
@@ -204,11 +205,22 @@
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 15;
             // 
+            // btndlt
+            // 
+            this.btndlt.Location = new System.Drawing.Point(329, 460);
+            this.btndlt.Name = "btndlt";
+            this.btndlt.Size = new System.Drawing.Size(237, 30);
+            this.btndlt.TabIndex = 16;
+            this.btndlt.Text = "delete";
+            this.btndlt.UseVisualStyleBackColor = true;
+            this.btndlt.Click += new System.EventHandler(this.btndlt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 577);
+            this.Controls.Add(this.btndlt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btndiv);
             this.Controls.Add(this.btnmult);
@@ -251,6 +263,7 @@
         private System.Windows.Forms.Button btnmult;
         private System.Windows.Forms.Button btndiv;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btndlt;
     }
 }
 

@@ -24,77 +24,82 @@ namespace Calculate_1
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            label1.Text = "0";
+            label1.Text = label1.Text + "0";
         }
 
         private void btnegal_Click(object sender, EventArgs e)
         {
-            label1.Text = "=";
+            label1.Text = label1.Text + "=";
         }
 
         private void btnplus_Click(object sender, EventArgs e)
         {
-            label1.Text = "+";
+            label1.Text = label1.Text + "+";
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            label1.Text = "1";
+            label1.Text = label1.Text + "1";
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            label1.Text = "2";
+            label1.Text = label1.Text +"2";
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            label1.Text = "3";
+            label1.Text = label1.Text + "3";
         }
 
         private void btnmoins_Click(object sender, EventArgs e)
         {
-            label1.Text = "-";
+            label1.Text = label1.Text + "-";
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            label1.Text = "4";
+            label1.Text = label1.Text + "4";
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            label1.Text = "5";
+            label1.Text = label1.Text + "5";
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            label1.Text = "6";
+            label1.Text = label1.Text + "6";
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            label1.Text = "7";
+            label1.Text = label1.Text + "7";
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            label1.Text = "8";
+            label1.Text = label1.Text + "8";
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            label1.Text = "9";
+            label1.Text = label1.Text + "9";
         }
 
         private void btndiv_Click(object sender, EventArgs e)
         {
-            label1.Text = "/";
+            label1.Text = label1.Text + "/";
         }
 
         private void btnmult_Click(object sender, EventArgs e)
         {
-            label1.Text = "×";
+            label1.Text = label1.Text + "×";
+        }
+
+        private void btndlt_Click(object sender, EventArgs e)
+        {
+            label1.Text = null;
         }
     }
 }
