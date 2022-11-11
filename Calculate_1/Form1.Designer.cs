@@ -38,11 +38,17 @@
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
+            this.btnegal = new System.Windows.Forms.Button();
+            this.btnplus = new System.Windows.Forms.Button();
+            this.btnmoins = new System.Windows.Forms.Button();
+            this.btnmult = new System.Windows.Forms.Button();
+            this.btndiv = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(329, 433);
+            this.btn0.Location = new System.Drawing.Point(248, 433);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(75, 21);
             this.btn0.TabIndex = 0;
@@ -130,11 +136,70 @@
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
             // 
+            // btnegal
+            // 
+            this.btnegal.Location = new System.Drawing.Point(329, 431);
+            this.btnegal.Name = "btnegal";
+            this.btnegal.Size = new System.Drawing.Size(156, 23);
+            this.btnegal.TabIndex = 10;
+            this.btnegal.Text = "=";
+            this.btnegal.UseVisualStyleBackColor = true;
+            // 
+            // btnplus
+            // 
+            this.btnplus.Location = new System.Drawing.Point(491, 431);
+            this.btnplus.Name = "btnplus";
+            this.btnplus.Size = new System.Drawing.Size(75, 23);
+            this.btnplus.TabIndex = 11;
+            this.btnplus.Text = "+";
+            this.btnplus.UseVisualStyleBackColor = true;
+            // 
+            // btnmoins
+            // 
+            this.btnmoins.Location = new System.Drawing.Point(491, 402);
+            this.btnmoins.Name = "btnmoins";
+            this.btnmoins.Size = new System.Drawing.Size(75, 23);
+            this.btnmoins.TabIndex = 12;
+            this.btnmoins.Text = "-";
+            this.btnmoins.UseVisualStyleBackColor = true;
+            // 
+            // btnmult
+            // 
+            this.btnmult.Location = new System.Drawing.Point(491, 375);
+            this.btnmult.Name = "btnmult";
+            this.btnmult.Size = new System.Drawing.Size(75, 23);
+            this.btnmult.TabIndex = 13;
+            this.btnmult.Text = "×";
+            this.btnmult.UseVisualStyleBackColor = true;
+            // 
+            // btndiv
+            // 
+            this.btndiv.Location = new System.Drawing.Point(491, 346);
+            this.btndiv.Name = "btndiv";
+            this.btndiv.Size = new System.Drawing.Size(75, 23);
+            this.btndiv.TabIndex = 14;
+            this.btndiv.Text = "/";
+            this.btndiv.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(245, 300);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 577);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btndiv);
+            this.Controls.Add(this.btnmult);
+            this.Controls.Add(this.btnmoins);
+            this.Controls.Add(this.btnplus);
+            this.Controls.Add(this.btnegal);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn8);
@@ -147,7 +212,9 @@
             this.Controls.Add(this.btn0);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -163,6 +230,12 @@
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btnegal;
+        private System.Windows.Forms.Button btnplus;
+        private System.Windows.Forms.Button btnmoins;
+        private System.Windows.Forms.Button btnmult;
+        private System.Windows.Forms.Button btndiv;
+        private System.Windows.Forms.Label label1;
     }
 }
 
