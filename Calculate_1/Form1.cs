@@ -12,8 +12,9 @@ namespace Calculate_1
 {
     public partial class Form1 : Form
     {
+        string operation;
         public Form1()
-        {
+        { 
             InitializeComponent();
         }
 
@@ -30,11 +31,14 @@ namespace Calculate_1
         private void btnegal_Click(object sender, EventArgs e)
         {
             label1.Text = label1.Text + "=";
+            operation = "=";
+
         }
 
         private void btnplus_Click(object sender, EventArgs e)
         {
             label1.Text = label1.Text + "+";
+            operation = "+";
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -55,6 +59,7 @@ namespace Calculate_1
         private void btnmoins_Click(object sender, EventArgs e)
         {
             label1.Text = label1.Text + "-";
+            operation = "-";
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -90,11 +95,14 @@ namespace Calculate_1
         private void btndiv_Click(object sender, EventArgs e)
         {
             label1.Text = label1.Text + "/";
+            operation = "/";
         }
 
         private void btnmult_Click(object sender, EventArgs e)
         {
+            
             label1.Text = label1.Text + "×";
+            operation = "×";
         }
 
         private void btndlt_Click(object sender, EventArgs e)
