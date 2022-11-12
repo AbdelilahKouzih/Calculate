@@ -28,8 +28,13 @@ namespace Calculate_1
 
         private void btn0_Click(object sender, EventArgs e)
         {
-           
-           // label1.Text = label1.Text + "0";
+                
+                label1.Text = label1.Text + "0";
+        }
+
+        private void btnegal_Click(object sender, EventArgs e)
+        {
+            label1.Text = label1.Text + "=";
             double deusiemmeNombre;
             double Result;
 
@@ -67,14 +72,8 @@ namespace Calculate_1
                     premierNombre = Result;
                 }
             }
-        }
 
-        private void btnegal_Click(object sender, EventArgs e)
-        {
-            label1.Text = label1.Text + "=";
 
-           
-           
 
         }
 
