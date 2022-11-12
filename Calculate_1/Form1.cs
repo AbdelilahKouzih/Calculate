@@ -37,8 +37,8 @@ namespace Calculate_1
             label1.Text = label1.Text + "=";
             double deusiemmeNombre;
             double Result;
-
-            deusiemmeNombre = Convert.ToDouble(label1.Text);
+            
+            deusiemmeNombre = double.Parse(label1.Text);
 
             if (operation == "+")
             {
@@ -80,7 +80,7 @@ namespace Calculate_1
         private void btnplus_Click(object sender, EventArgs e)
         {
             label1.Text = label1.Text + "+";
-            premierNombre = Convert.ToDouble(label1.Text);
+            premierNombre = double.Parse(label1.Text);
             label1.Text = "0";
             operation = "+";
         }
@@ -118,7 +118,7 @@ namespace Calculate_1
         private void btnmoins_Click(object sender, EventArgs e)
         {
             label1.Text = label1.Text + "-";
-            premierNombre = Convert.ToDouble(label1.Text);
+            premierNombre = double.Parse(label1.Text);
             label1.Text = "0";
             operation = "-";
         }
@@ -186,7 +186,7 @@ namespace Calculate_1
         private void btndiv_Click(object sender, EventArgs e)
         {
             label1.Text = label1.Text + "/";
-            premierNombre = Convert.ToDouble(label1.Text);
+            premierNombre = double.Parse(label1.Text);
             label1.Text = "0";
             operation = "/";
         }
@@ -195,7 +195,7 @@ namespace Calculate_1
         {
             
             label1.Text = label1.Text + "×";
-            premierNombre = Convert.ToDouble(label1.Text);
+            premierNombre = double.Parse(label1.Text);
             label1.Text = "0";
             operation = "*";
         }
