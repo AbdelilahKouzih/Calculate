@@ -13,7 +13,7 @@ namespace Calculate_1
 {
     public partial class Form1 : Form
     {
-        double premierNombre;
+       
        
         string operation;
         public Form1()
@@ -28,48 +28,45 @@ namespace Calculate_1
 
         private void btn0_Click(object sender, EventArgs e)
         {
-                
-                label1.Text = label1.Text + "0";
+
+            textBox1.Text= textBox1.Text + "0";
         }
 
         private void btnegal_Click(object sender, EventArgs e)
         {
-            label1.Text = label1.Text + "=";
-            double deusiemmeNombre;
-            double Result;
-            
-            deusiemmeNombre = double.Parse(label1.Text);
+           
+    
 
             if (operation == "+")
             {
-                Result = (premierNombre + deusiemmeNombre);
-                label1.Text = Convert.ToString(Result);
-                premierNombre = Result;
+                string[] chaine = textBox1.Text.Split('+');
+                textBox1.Text += Environment.NewLine+"+"+ Environment.NewLine + (double.Parse(chaine[0]) + double.Parse(chaine[1])).ToString();
             }
             if (operation == "-")
             {
-                Result = (premierNombre - deusiemmeNombre);
-                label1.Text = Convert.ToString(Result);
-                premierNombre = Result;
+                string[] chaine = textBox1.Text.Split('-');
+                textBox1.Text += Environment.NewLine + "-" + Environment.NewLine + (double.Parse(chaine[0]) - double.Parse(chaine[1])).ToString();
+
             }
             if (operation == "*")
             {
-                Result = (premierNombre * deusiemmeNombre);
-                label1.Text = Convert.ToString(Result);
-                premierNombre = Result;
+                string[] chaine = textBox1.Text.Split('×');
+                textBox1.Text += Environment.NewLine + "×" + Environment.NewLine + (double.Parse(chaine[0]) * double.Parse(chaine[1])).ToString();
+                
             }
             if (operation == "/")
             {
-                if (deusiemmeNombre == 0)
+                string[] chaine = textBox1.Text.Split('/');
+
+                if (double.Parse(chaine[0]) == 0)
                 {
-                    label1.Text = "Cannot divide by zero";
+                    textBox1.Text = "Cannot divide by zero";
 
                 }
                 else
                 {
-                    Result = (premierNombre / deusiemmeNombre);
-                    label1.Text = Convert.ToString(Result);
-                    premierNombre = Result;
+                    textBox1.Text += Environment.NewLine + "÷" + Environment.NewLine +(double.Parse(chaine[0]) / double.Parse(chaine[1])).ToString();
+
                 }
             }
 
@@ -79,139 +76,130 @@ namespace Calculate_1
 
         private void btnplus_Click(object sender, EventArgs e)
         {
-            label1.Text = label1.Text + "+";
-            premierNombre = double.Parse(label1.Text);
-            label1.Text = "0";
+            textBox1.Text = textBox1.Text + "+";
+         
             operation = "+";
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "1";
+                textBox1.Text = "1";
             }
             else
-                label1.Text = label1.Text + "1";
+                textBox1.Text = textBox1.Text + "1";
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "2";
+                textBox1.Text = "2";
             }
             else
-                label1.Text = label1.Text +"2";
+                textBox1.Text = textBox1.Text +"2";
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "3";
+                textBox1.Text = "3";
             }
             else
-                label1.Text = label1.Text + "3";
+                textBox1.Text = textBox1.Text + "3";
         }
 
         private void btnmoins_Click(object sender, EventArgs e)
         {
-            label1.Text = label1.Text + "-";
-            premierNombre = double.Parse(label1.Text);
-            label1.Text = "0";
-            operation = "-";
+            textBox1.Text = textBox1.Text + "-";
+
+              operation = "-";
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "4";
+                textBox1.Text = "4";
             }
             else
-                label1.Text = label1.Text + "4";
+                textBox1.Text = textBox1.Text + "4";
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "5";
+                textBox1.Text = "5";
             }
             else
-                label1.Text = label1.Text + "5";
+                textBox1.Text = textBox1.Text + "5";
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "6";
+                textBox1.Text = "6";
             }
             else
-                label1.Text = label1.Text + "6";
+                textBox1.Text = textBox1.Text + "6";
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "7";
+                textBox1.Text = "7";
             }
             else
-                label1.Text = label1.Text + "7";
+                textBox1.Text = textBox1.Text + "7";
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "8";
+                textBox1.Text = "8";
             }
             else
-                label1.Text = label1.Text + "8";
+                textBox1.Text = textBox1.Text + "8";
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "0" && label1.Text != null)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                label1.Text = "9";
+                textBox1.Text = "9";
             }
             else
-                label1.Text = label1.Text + "9";
+                textBox1.Text = textBox1.Text + "9";
         }
 
         private void btndiv_Click(object sender, EventArgs e)
         {
-            label1.Text = label1.Text + "/";
-            premierNombre = double.Parse(label1.Text);
-            label1.Text = "0";
+            textBox1.Text = textBox1.Text + "/";
+           
             operation = "/";
         }
 
         private void btnmult_Click(object sender, EventArgs e)
         {
-            
-            label1.Text = label1.Text + "×";
-            premierNombre = double.Parse(label1.Text);
-            label1.Text = "0";
+
+            textBox1.Text = textBox1.Text + "×";
+           
             operation = "*";
         }
 
         private void btndlt_Click(object sender, EventArgs e)
         {
-            label1.Text=string.Empty;
+            textBox1.Text=string.Empty;
         }
 
 
-       private void nequal_Click(object sender, EventArgs e)  
-        {  
-           
-        }  
-  
-               
+       
 
         
     }
