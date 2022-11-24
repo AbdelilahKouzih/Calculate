@@ -198,9 +198,53 @@ namespace Calculate_1
             textBox1.Text=string.Empty;
         }
 
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.D1) 
+            {
+                btn1.PerformClick();
+            }
+            if (e.KeyCode == Keys.D0)
+            {
+                btn0.PerformClick();
+            }
+            if (e.KeyCode == Keys.D2)
+            {
+                btn2.PerformClick();
+            }
+            if (e.KeyCode == Keys.D3)
+            {
+                btn3.PerformClick();
+            }
+            if (e.KeyCode == Keys.D4)
+            {
+                btn4.PerformClick();
+            }
+            if (e.KeyCode == Keys.D4)
+            {
+                btn4.PerformClick();
+            }
+            if (e.KeyCode == Keys.D5)
+            {
+                btn5.PerformClick();
+            }
+            if (e.KeyCode == Keys.D6)
+            {
+                btn6.PerformClick();
+            }
+            if (e.KeyCode == Keys.D7)
+            {
+                btn7.PerformClick();
+            }
+            if (e.KeyCode == Keys.D8)
+            {
+                btn8.PerformClick();
+            }
+            if (e.KeyCode == Keys.D9)
+            {
+                btn9.PerformClick();
+            }
 
-       
-
-        
+        }
     }
 }

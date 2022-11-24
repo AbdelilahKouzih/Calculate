@@ -1,4 +1,7 @@
-﻿namespace Calculate_1
+﻿using System;
+using System.Windows.Forms;
+
+namespace Calculate_1
 {
     partial class Form1
     {
@@ -248,13 +251,22 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn0);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+
 
         #endregion
 
@@ -273,7 +285,7 @@
         private System.Windows.Forms.Button btnmoins;
         private System.Windows.Forms.Button btnmult;
         private System.Windows.Forms.Button btndiv;
-        
+        private Label label1;
         private System.Windows.Forms.Button btndlt;
         private System.Windows.Forms.TextBox textBox1;
     }
